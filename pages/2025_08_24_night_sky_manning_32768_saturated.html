@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2025/08/24 Manning Park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+      #panorama {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="panorama"></div>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+    <script>
+      pannellum.viewer("panorama", {
+        type: "equirectangular",
+        panorama: "./assets/2025_08_24_night_sky_manning_32768_saturated.jpg",
+        autoLoad: true,
+      });
+    </script>
+  </body>
+</html>
